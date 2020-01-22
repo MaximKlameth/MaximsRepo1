@@ -33,7 +33,9 @@ public class ButtonBarView extends JPanel {
 		schwerButton.addActionListener(snakeController.getSchwierigkeitErhoehenListener());
 		add(schwerButton);
 		
-		
+		spielBeendenButton = new JButton("Spiel abbrechen");
+		spielBeendenButton.addActionListener(snakeController.getExitGameListener());
+		add(spielBeendenButton);	
 		
 		
 		
